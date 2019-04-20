@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txtHeading"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        androidpadding="@dimen/_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/dynamic_sip" />
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/_10"
+        android:text="@string/tag_line" />
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center">
+
+        <com.cashrichtask.customview.EquityRateView
+            android:id="@+id/equityRateView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_margin="@dimen/_16" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_36"
+            android:background="@drawable/back_circle" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtFixValue"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"
+            android:textColor="@android:color/background_dark"
+            tools:text="50%" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtShareValue"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70dp"
+            android:textColor="@android:color/background_dark"
+            tools:text="50%" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="@dimen/_16">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="This is just a long teext to check the view.This is just a long teext to check the viewThis is just a long teext to check the viewThis is just a long teext to check the viewThis is just a long teext to check the viewThis is just a long teext to check the view" />
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cashrich Task</string>
+    <string name="dynamic_sip">Dynamic SIP</string>
+    <string name="earn_more_than">Earn more than SIP</string>
+    <string name="tag_line">Earn more than normal SIP</string>
+    <string name="retry">Retry</string>
+</resources>
